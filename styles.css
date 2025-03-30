@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-white {
+    @apply bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors;
+}
+
+/* Task priority colors */
+.priority-high {
+    @apply border-l-4 border-red-500;
+}
+.priority-medium {
+    @apply border-l-4 border-yellow-500;
+}
+.priority-low {
+    @apply border-l-4 border-green-500;
+}
+
+/* Animation for task completion */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.task-item {
+    animation: fadeIn 0.3s ease-out;
+}
