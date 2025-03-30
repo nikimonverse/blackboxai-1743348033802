@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header will be included here -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="hero bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl p-8 text-white mb-8">
+            <h1 class="text-4xl font-bold mb-2">Welcome to Study Planner</h1>
+            <p class="text-xl mb-6">Organize your academic life efficiently</p>
+            <div class="flex gap-4">
+                <a href="schedule.html" class="btn-white">View Schedule</a>
+                <a href="tasks.html" class="btn-white">My Tasks</a>
+            </div>
+        </section>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-xl font-semibold mb-4">Upcoming Tasks</h2>
+                <div id="upcoming-tasks" class="space-y-3">
+                    <!-- Will be populated by JavaScript -->
+                    <p class="text-gray-500">Loading tasks...</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow">
+                <h2 class="text-xl font-semibold mb-4">Today's Schedule</h2>
+                <div id="todays-schedule" class="space-y-3">
+                    <!-- Will be populated by JavaScript -->
+                    <p class="text-gray-500">Loading schedule...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
